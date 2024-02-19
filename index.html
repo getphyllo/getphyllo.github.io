@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMystique - Coding challenge</title>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/logo//favicon-16x16.png">
+    <link rel="manifest" href="/assets/logo/site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/image/Logo.svg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="https://phyllo.recruitee.com/" target="_blank">Careers</a></li>
+                <li><a href="https://www.getphyllo.com/about" target="_blank">About Phyllo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Other sections of the landing page go here -->
+
+    <section id="landing-section">
+        <div class="landing-section">
+            <div class="description">
+                <h1>Build the future of social APIs</h1>
+                <p class="details">Calling all engineering minds! Join us on an innovative journey where challenges await your ingenious touch. Dive into endless possibilities, challenge conventions, and engineer extraordinary solutions.</p>
+                <ul class="sub-details">
+                    <li><img src="assets/icon/terminal-box-fill.svg" alt="Logo"> Work and build from anywhere</li>
+                    <li><img src="assets/icon/bard-fill.svg" alt="Logo"> A work culture that helps you innovate and evolve continuously</li>
+                    <li><img src="assets/icon/lightbulb-flash-fill.svg" alt="Logo"> Opportunities to express your own creative side</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="assets/image/Illustration all.svg" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="coding-challenge">
+        <div class="coding-challenge">
+
+            <div class="container">
+                <h2 class="main-heading">TechMystique: coding challenge</h2>
+                <h3 class="main-subheading">Want to be a part of our team?</h3>
+                
+                <div class="step">
+                    <h4 class="step-heading">Step 1:</h4>
+                    <h5 class="step-title"><img src="assets/icon/brain-line.svg" alt="Logo">Solve <span class="purple-color underline"> <u>any or all</u></span> of the following problems</h5>
+                    <p class="step-description">Unleash your creativity and showcase your engineering wizardry! It's more than a challenge; it's an odyssey into the unknown, where your skills take centre stage without the formality of a traditional interview. Be part of a community pushing boundaries and redefine what's possible.</p>
+                    <div class="problem-container">
+                        <div class="problem-box" onclick="openModal(0);">
+                            <div class="problem-chip-ui">Problem #1</div>
+                            <h2 class="problem-title">🔐 Authenticated APIs</h2>
+                            <p class="problem-explanation">As an engineer, you've likely encountered tools such as Google Analytics, HubSpot, Mixpanel, Adobe Analytics, and others. But have you ever pondered the inner workings of those JavaScript libraries that seamlessly transmit data from the browser to backend APIs in a secure manner?</p>
+                        </div>
+                        <div class="problem-box" onclick="openModal(1);">
+                            <div class="problem-chip-ui">Problem #2</div>
+                            <h2 class="problem-title">🧠 AI product recognition</h2>
+                            <p class="problem-explanation">As an engineer, you've likely encountered tools such as Google Analytics, HubSpot, Mixpanel, Adobe Analytics, and others. But have you ever pondered the inner workings of those JavaScript libraries that seamlessly transmit data from the browser to backend APIs in a secure manner?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 id="modal-problem" class="mb-32"></h2>
+                        <h3 id="modal-title" class="mb-32"></h3>
+                        <h3 class="modal-heading">Problem statement</h3>
+                        <p id="modal-explanation" class="mb-32"></p>
+                        <p id="modal-additional-explanation" class="mb-32"></p>
+                        <h3 id="modal-sample-links"></h3>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <h4 class="step-heading">Step 2:</h4>
+                    <h5 class="step-title"><img src="assets/icon/mail-send-line.svg" alt="Logo">Send in your solutions</h5>
+                    <p class="step-description">Send in your solutions to us at <a href="mailto:techmystique@getphyllo.com" class="remove-decoration purple-color">techmystique@getphyllo.com</a>, or upload them to GitHub and email the link to the same address.</p>
+                </div>
+                
+                <div class="step">
+                    <h4 class="step-heading">Step 3:</h4>
+                    <h5 class="step-title"><img src="assets/icon/shake-hands-line.svg" alt="Logo">Come meet the team</h5>
+                    <p class="step-description">Nailed the challenge? You’ll be invited to join us at Phyllo where you get to connect with the team, share your thought process in detail, and dive deeper into the role and other potential opportunities!</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="assets/logo/phyllo_dark-bg-logo.svg" alt="Phyllo Logo">
+                <p>APIs for continuous access to verified, creator-permissioned data across different platforms</p>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="https://www.getphyllo.com/about">About</a></li>
+                    <li><a href="https://phyllo.recruitee.com/">Career</a></li>
+                    <li><a href="https://www.getphyllo.com/blog">Blog</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <!-- <h4>Follow Us</h4> -->
+                <ul>
+                    <li><a href="https://www.facebook.com/getPhyllo/"><img src="assets/icon/Facebook.svg" alt="Logo"></a></li>
+                    <li><a href="https://www.instagram.com/get_phyllo/"><img src="assets/icon/Instagram.svg" alt="Logo"></a></li>
+                    <li><a href="https://twitter.com/getphyllo"><img src="assets/icon/Twitter.svg" alt="Logo"></a></li>
+                    <li><a href="https://www.linkedin.com/company/getphyllo/"><img src="assets/icon/LinkedIn.svg" alt="Logo"></a></li>
+                    <li><a href="#"><img src="assets/icon/Dribbble.svg" alt="Logo"></a></li>
+                </ul>
+                <div class="social-media-icons">
+                    <!-- Add your social media icons here -->
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+        <p class="copyright">© 2022 Phyllo. All Rights Reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
