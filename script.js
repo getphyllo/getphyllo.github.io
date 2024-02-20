@@ -81,7 +81,7 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
 
     // Change the background color based on scroll position
-    if (scrollPosition > 100) {
+    if (scrollPosition > 80) {
         header.style.backgroundColor = 'white'; // Change to your desired color
         header.style.borderBottom = '1px solid #E5E5E8';
         header.style.opacity = '0.95';
