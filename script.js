@@ -83,9 +83,11 @@ window.addEventListener('scroll', function() {
     // Change the background color based on scroll position
     if (scrollPosition > 100) {
         header.style.backgroundColor = 'white'; // Change to your desired color
-        header.style.borderBottom = '1px solid #E5E5E8'
+        header.style.borderBottom = '1px solid #E5E5E8';
+        header.style.opacity = '0.95';
     } else {
         header.style.backgroundColor = 'transparent'; // Change to your default color
-        header.style.borderBottom = 'none'
+        header.style.borderBottom = 'none';
+        header.style.opacity = '1';
     }
 });
