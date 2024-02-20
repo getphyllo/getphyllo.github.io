@@ -485,4 +485,7 @@ linear-gradient(0deg, #E5E5E8, #E5E5E8);
     .middle {
         margin: auto;
     }
+    #modal-sample-links {
+        padding: 0 20px;
+    }
 }
