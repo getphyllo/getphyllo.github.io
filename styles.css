@@ -10,16 +10,19 @@ body {
 }
 
 header {
-    /* background-color: #ffffff; */
-    padding: 30px 0 0;
-    max-width: 1200px;
+    padding: 30px 0 20px;
     margin: 0 auto;
+    position: sticky!important;
+    top: 0;
+    z-index: 3;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo img {
@@ -272,7 +275,7 @@ linear-gradient(0deg, #E5E5E8, #E5E5E8);
     align-items: center;
 }
 
-#modal-explanation, #modal-additional-explanation {
+#modal-explanation, #modal-additional-explanation, #modal-extra-info {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

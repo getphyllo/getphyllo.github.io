@@ -3,7 +3,8 @@ var problems = [
     {
         problem: "Problem #1",
         title: "🔐 Authenticated APIs",
-        explanation: `Develop an authentication mechanism enabling frontend JavaScript libraries to execute authenticated API calls to backend servers, ensuring payload integrity and API security.The mechanism should thwart manipulation attempts and block API calls originating from malicious users. This authentication is not user authentication or JWT token.`,
+        explanation: `Develop an authentication mechanism enabling frontend JavaScript libraries to execute authenticated API calls to backend servers, ensuring payload integrity and API security.The mechanism should thwart manipulation attempts and block API calls originating from malicious users.`,
+        modalExtraInfo: `This authentication is not user authentication or JWT token.`,
         additionalExplanation: `These JavaScript libraries will be integrated into your customer's website, with configurable parameters, for ex: Measurement ID/Google Tag ID that Google Analytics uses or tokens that Mixpanel uses and so on.`
     },
     {
@@ -23,16 +24,21 @@ function openModal(index) {
     var modalProblem = document.getElementById("modal-problem");
     var modalTitle = document.getElementById("modal-title");
     var modalExplanation = document.getElementById("modal-explanation");
+    var modalExtraInfo = document.getElementById("modal-extra-info");
     var modalAdditionalExplanation = document.getElementById("modal-additional-explanation");
     var modalSampleLinks = document.getElementById("modal-sample-links");
 
     // Clear previous links
     modalSampleLinks.innerHTML = "";
+    modalExtraInfo.textContent = "";
 
     modalProblem.textContent = problems[index].problem;
     modalTitle.textContent = problems[index].title;
     modalExplanation.textContent = problems[index].explanation;
     modalAdditionalExplanation.textContent = problems[index].additionalExplanation;
+    if(problems[index]?.modalExtraInfo){
+        modalExtraInfo.textContent = problems[index].modalExtraInfo;
+    }
 
     // Add sample links
     if (problems[index].sampleLinks) {
@@ -69,3 +75,17 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    var scrollPosition = window.scrollY;
+
+    // Change the background color based on scroll position
+    if (scrollPosition > 100) {
+        header.style.backgroundColor = 'white'; // Change to your desired color
+        header.style.borderBottom = '1px solid #E5E5E8'
+    } else {
+        header.style.backgroundColor = 'transparent'; // Change to your default color
+        header.style.borderBottom = 'none'
+    }
+});
