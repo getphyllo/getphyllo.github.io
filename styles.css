@@ -43,7 +43,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #007bff; /* Hover color */
+    color: #680DE4; /* Hover color */
 }
 
 /* Landing section styles */
@@ -228,6 +228,7 @@ header {
     background-repeat: no-repeat; /* Prevent the SVG from repeating */
     background-size: auto 70%, auto auto; /* Set the size of the backgrounds */
     background-position: top right, 0 0; /* Position the backgrounds */
+    box-shadow: 0px 2px 8px 0px #E3EDF7;
 }
 
 .problem-chip-ui, #modal-problem {

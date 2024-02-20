@@ -3,9 +3,8 @@ var problems = [
     {
         problem: "Problem #1",
         title: "🔐 Authenticated APIs",
-        explanation: "As an engineer, you've likely encountered tools such as Google Analytics, HubSpot, Mixpanel, Adobe Analytics, and others. But have you ever pondered the inner workings of those JavaScript libraries that seamlessly transmit data from the browser to backend APIs in a secure manner?",
-        additionalExplanation: `Design an authentication mechanism tailored for frontend JavaScript libraries, enabling secure API calls to backend servers. The goal? Ensuring data integrity while fortifying API security against potential manipulation. The backend server must possess the ability to identify and reject any API calls originating from malicious sources.
-        Picture this: the JavaScript libraries are embedded within your customer's website, boasting a handful of configurable parameters, for ex: Measurement ID/Google Tag ID that Google Analytics uses or tokens that Mixpanel uses and so on. Your challenge? Crafting a robust authentication solution that seamlessly integrates with these libraries, safeguarding the integrity of transmitted payloads while thwarting nefarious actors.`
+        explanation: `Develop an authentication mechanism enabling frontend JavaScript libraries to execute authenticated API calls to backend servers, ensuring payload integrity and API security.The mechanism should thwart manipulation attempts and block API calls originating from malicious users. This authentication is not user authentication or JWT token.`,
+        additionalExplanation: `These JavaScript libraries will be integrated into your customer's website, with configurable parameters, for ex: Measurement ID/Google Tag ID that Google Analytics uses or tokens that Mixpanel uses and so on.`
     },
     {
         problem: "Problem #2",
