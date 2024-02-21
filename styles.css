@@ -489,3 +489,39 @@ linear-gradient(0deg, #E5E5E8, #E5E5E8);
         padding: 0 20px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .image {
+        transform: translateY(calc(-18vw));
+    }
+    .sub-details {
+        transform: translateY(calc(60vw));
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .image {
+        transform: translateY(calc(-18vw));
+    }
+    .sub-details {
+        transform: translateY(calc(70vw));
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .image {
+        transform: translateY(calc(-30vw));
+    }
+    .sub-details {
+        transform: translateY(calc(80vw));
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .image {
+        transform: translateY(calc(-40vw));
+    }
+    .sub-details {
+        transform: translateY(calc(80vw));
+    }
+}
