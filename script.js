@@ -13,7 +13,7 @@ var problems = [
         // additionalExplanation: `Craft a script capable of processing both inputs and delivering accurate outputs. The script can be written in any programming language, capable of seamlessly handling various inputs beyond the provided samples. Accuracy is key, so feel free to leverage any publicly available tools like Google Vision AI, AWS AI services, or open-source libraries to enhance identification precision. Are you prepared to embark on this coding adventure? Let's roll up our sleeves and unleash the full potential of automation!`,
 
         problem: "Problem #2",
-        title: "🧠 Commerce product recognition (using AI)",
+        title: "🧠 Commerce product recognition",
         explanation: `You have been given a picture of a product and a video. Write a script to find all the timestamp ranges in the given video where the product from the given image appears. Below, you'll find a few set of test inputs for your experimentation.`,
         sampleLinks: [
             { label: "Sample Video,", link: "https://www.instagram.com/reel/C3AoUTgIIiH/" },
@@ -22,7 +22,7 @@ var problems = [
     },
     {
         problem: "Problem #3",
-        title: "🕵 Qualitative analysis of the video (using AI)",
+        title: "🕵 Qualitative analysis of the video",
         explanation: `Given a video, develop a script to conduct qualitative analysis on attributes outlined in the attached Google Sheet. The attributes are categorized as either "good to have" or "must have," with greater accuracy in recognizing a higher number of "good to have" attributes being desirable.`,
         sampleLinks: [
             { label: "Video Attributes Google Sheet", link: "https://docs.google.com/spreadsheets/d/1p6-0Vop3klJeVVjW5ObvsDwswPqYfHyZLr23o5PQjk0/edit?usp=sharing" },
